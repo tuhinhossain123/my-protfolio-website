@@ -1,10 +1,11 @@
 import banner from "../../../assets/banner.jpg";
 import { FaDownload } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa";
+import resume from"../../../assets/TUFAN PROJECT.pdf"
 
 const Banner = () => {
   return (
-    <div className="flex md:justify-around flex-col-reverse md:flex-row items-center my-10 px-8 md:px-4 lg:px-0 ">
+    <div  className="flex md:justify-around flex-col-reverse md:flex-row items-center my-10 px-8 md:px-4 lg:px-0 ">
       <div className="space-y-4 my-3">
         <h2>
           <span className="text-4xl font-bold">Hi There 👋,</span>{" "}
@@ -14,12 +15,12 @@ const Banner = () => {
         </h2>
         <h3 className="text-2xl font-medium">|| MERN Stake Developer</h3>
         <div className="flex gap-4">
-          <button className=" font-semibold text-white p-3 rounded-lg flex items-center gap-2 bg-sky-500">
+          <button className=" font-semibold text-sm md:text-lg  text-white p-3 rounded-lg flex items-center gap-2 bg-sky-500">
             Contact Me <FaPhone />
           </button>
-          <button className="border font-semibold text-white  p-2 rounded-lg flex items-center gap-2">
+          <a href={resume} download className="border text-sm md:text-lg font-semibold text-white  p-2 rounded-lg flex items-center gap-2">
             Download Resume <FaDownload />
-          </button>
+          </a>
         </div>
       </div>
       <div className="">

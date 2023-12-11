@@ -8,7 +8,7 @@ import { DiMongodb } from "react-icons/di";
 
 const Skills = () => {
   return (
-    <div>
+    <div id="/skills">
       <h2 className="text-3xl font-semibold text-center text-white mb-7">
         My Skills
       </h2>

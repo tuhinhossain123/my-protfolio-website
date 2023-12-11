@@ -19,7 +19,7 @@ export const router = createBrowserRouter([
         element: <Skills></Skills>,
       },
       {
-        path: "/aboutMe",
+        path: "/about",
         element: <About></About>,
       },
       {

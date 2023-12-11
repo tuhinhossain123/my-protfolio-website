@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="flex justify-evenly max-w-[1200px] mx-auto p-4 mt-16">
+    <div className="flex justify-evenly items-center flex-col-reverse md:flex-row   p-4  md:mt-16  ml-10 md:ml-0">
       <div>
         <p>Copyright © 2023 - All right reserved</p>
       </div>

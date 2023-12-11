@@ -10,8 +10,8 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_g82xtzr",
-        "template_5j0lubs",
+        "service_rawyb32",
+        "template_1xe3dvk",
         form.current,
         "oCGOoFBnlThyDZ0sR"
       )
@@ -25,7 +25,7 @@ const Contact = () => {
       );
   };
   return (
-    <div id="contact" className="w-full md:w-[70%] mx-auto">
+    <div id="/contact" className="w-full md:w-[70%] mx-auto">
       <div className="hero-content flex-col">
         <div className="">
           <h1 className="text-3xl font-semibold text-white">Contact Me</h1>
@@ -65,7 +65,7 @@ const Contact = () => {
                 <input
                   type="name"
                   placeholder="name"
-                  name="name"
+                  name="from_name"
                   className="input bg-black text-white"
                   required
                 />
@@ -77,7 +77,7 @@ const Contact = () => {
                 <input
                   type="email"
                   placeholder="email"
-                  name="email"
+                  name="from_email"
                   className="input bg-black text-white"
                   required
                 />
@@ -87,7 +87,7 @@ const Contact = () => {
                   <span className="label-text text-white">Message</span>
                 </label>
                 <textarea
-                  name=""
+                  name="message"
                   id=""
                   cols="5"
                   rows="4"

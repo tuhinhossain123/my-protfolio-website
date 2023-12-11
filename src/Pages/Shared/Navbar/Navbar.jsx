@@ -1,78 +1,40 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
-
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const links = (
     <>
       <li className="text-[16px] font-bold">
-        <NavLink
-          to="/"
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "text-white"
-              : ""
-          }
-        >
-       <p></p> Home
-        </NavLink>
+        <Link to="/" spy={true} smooth={true} offset={50} duration={500}>
+          <p></p> Home
+        </Link>
       </li>
       <li className="text-[16px]  font-bold">
-        <NavLink
-          to="skills"
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "text-white font-bold"
-              : ""
-          }
-        >
+        <Link to="/skills" spy={true} smooth={true} offset={50} duration={500}>
           Skills
-        </NavLink>
+        </Link>
       </li>
       <li className="text-[16px]  font-bold">
         <NavLink
           to="/projects"
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "text-white font-bold"
-              : ""
-          }
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
         >
           Projects
         </NavLink>
       </li>
       <li className="text-[16px]  font-bold">
-        <NavLink
-          to="/aboutMe"
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "text-white font-bold"
-              : ""
-          }
-        >
+        <Link to="/about" spy={true} smooth={true} offset={50} duration={500}>
           About Me
-        </NavLink>
+        </Link>
       </li>
       <li className="text-[16px] font-bold">
-        <NavLink
-          to="/contact"
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "text-white font-bold"
-              : ""
-          }
-        >
+        <Link to="/contact" spy={true} smooth={true} offset={50} duration={500}>
           Contact
-        </NavLink>
+        </Link>
       </li>
     </>
   );
@@ -100,17 +62,15 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-           {links}
+            {links}
           </ul>
         </div>
         <button className="md:text-xl font-mono font-bold text-gray-400">
-       Tofazzal Hossain
+          Tofazzal Hossain
         </button>
       </div>
       <div className="navbar-end hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-        {links}
-        </ul>
+        <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
     </div>
   );
