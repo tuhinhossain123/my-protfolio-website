@@ -21,7 +21,7 @@ const Navbar = () => {
         </Link>
       </li>
       <li className="text-[16px]  font-bold">
-        <NavLink
+        <Link
           to="/projects"
           spy={true}
           smooth={true}
@@ -29,7 +29,7 @@ const Navbar = () => {
           duration={500}
         >
           Projects
-        </NavLink>
+        </Link>
       </li>
       <li className="text-[16px]  font-bold">
         <Link to="/about" spy={true} smooth={true} offset={50} duration={500}>

@@ -3,6 +3,7 @@ import { FaDownload } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa";
 import resume from "../../../assets/TUFAN PROJECT.pdf";
 import { Link } from "react-scroll";
+import { TypeAnimation } from "react-type-animation";
 
 const Banner = () => {
   return (
@@ -14,7 +15,20 @@ const Banner = () => {
             I'm Tofazzal Hossain
           </span>
         </h2>
-        <h3 className="text-2xl font-medium">|| MERN Stake Developer</h3>
+        <h3 className="text-2xl font-medium">
+          <TypeAnimation
+            sequence={[
+              "Welcome To My Protfolio",
+              1000,
+              "|| Mern Stack Developer",
+              1000,
+              "Thanks For Visite",
+              1000,
+            ]}
+            speed={50}
+            repeat={Infinity}
+          />
+        </h3>
         <div className="flex gap-4">
           <Link
             to="/contact"
