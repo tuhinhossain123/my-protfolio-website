@@ -12,7 +12,11 @@ const Experience = () => {
         Experience
       </h2>
       <div className="flex flex-col md:flex-row justify-between gap-5 max-w-[1200px] mx-auto px-6 md:px-0">
-        <div className="bg-gray-500 md:w-[50%]  rounded-lg p-3 space-y-2 drop-shadow-2xl">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          className="bg-gray-500 md:w-[50%]  rounded-lg p-3 space-y-2 drop-shadow-2xl"
+        >
           <h2 className="text-3xl text-center font-semibold text-sky-500">
             Front-End
           </h2>
@@ -30,13 +34,18 @@ const Experience = () => {
           </h2>
         </div>
 
-        <div className="bg-gray-500 md:w-[50%]  rounded-lg  space-y-2 p-3 drop-shadow-2xl">
+        <div
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          className="bg-gray-500 md:w-[50%]  rounded-lg  space-y-2 p-3 drop-shadow-2xl"
+        >
           <h2 className="text-3xl text-center font-semibold text-sky-500">
             Backend
           </h2>
           <div className="flex justify-center items-center gap-2 text-lg font-medium text-white">
-          <DiMongodb className="text-3xl pt-2" />
-          <p className="text-3xl">ex</p>
+            <DiMongodb className="text-3xl pt-2" />
+            <p className="text-3xl">ex</p>
           </div>
           <p className="text-center text-white">Basic</p>
         </div>

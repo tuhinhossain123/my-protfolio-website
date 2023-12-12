@@ -6,7 +6,7 @@ const Education = () => {
       </h2>
       <div className="flex flex-col md:flex-row justify-center md:h-[50vh]">
         <div className="md:w-[30%] flex items-start  justify-center">
-          <div className=" border  p-2 rounded-lg py-6 space-y-2 mb-4 md:mb-0 md:mr-4 lg:mr-0">
+          <div  data-aos="fade-up-right" className=" border  p-2 rounded-lg py-6 space-y-2 mb-4 md:mb-0 md:mr-4 lg:mr-0">
             <h2 className="text-2xl font-semibold text-sky-500 text-center">
               Diploma in CSE
             </h2>
@@ -19,7 +19,7 @@ const Education = () => {
           </div>
         </div>
         <div className="md:w-[30%] flex items-end justify-center md:border-l-2 md:pl-4 ml-0 border-l-0 border-gray-400">
-          <div className="border px-2 rounded-lg py-6 space-y-2 ">
+          <div data-aos="fade-up-left" className="border px-2 rounded-lg py-6 space-y-2 ">
             <h2 className="text-2xl font-semibold text-sky-500 text-center">
               Secondary School Certificate
             </h2>

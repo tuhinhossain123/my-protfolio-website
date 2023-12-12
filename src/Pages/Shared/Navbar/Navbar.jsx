@@ -70,7 +70,7 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <button className="md:text-xl font-mono font-bold text-gray-400">
+        <button className="text-sm md:text-xl font-mono font-bold  text-gray-400">
           Tofazzal Hossain
         </button>
       </div>

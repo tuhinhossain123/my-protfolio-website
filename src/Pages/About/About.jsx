@@ -1,6 +1,11 @@
 const About = () => {
   return (
-    <div id="/about" className=" w-[80%] mx-auto my-10 p-3">
+    <div
+      data-aos="fade-up"
+      data-aos-anchor-placement="bottom-bottom"
+      id="/about"
+      className=" w-[80%] mx-auto my-10 p-3"
+    >
       <h2 className="text-3xl font-semibold text-center text-white mb-3">
         About Me
       </h2>
@@ -13,7 +18,9 @@ const About = () => {
       <p className="text-xl font-sans">
         I am self taught initially,but i want to increase my learning speed.
         Currently my main target is to become full stake developer.I want to
-        make my career better with this.I'm actively searching for a full-time software developer position to gain practical experience and collaborate with like-minded individuals who share my passion for coding.
+        make my career better with this.I'm actively searching for a full-time
+        software developer position to gain practical experience and collaborate
+        with like-minded individuals who share my passion for coding.
       </p>
     </div>
   );

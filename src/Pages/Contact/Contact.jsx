@@ -26,7 +26,7 @@ const Contact = () => {
   };
   return (
     <div id="/contact" className="w-full md:w-[70%] mx-auto">
-      <div className="hero-content flex-col">
+      <div data-aos="zoom-in-up" className="hero-content flex-col">
         <div className="">
           <h1 className="text-3xl font-semibold text-white">Contact Me</h1>
         </div>
