@@ -19,6 +19,10 @@ export const router = createBrowserRouter([
         element: <Skills></Skills>,
       },
       {
+        path: "/education",
+        element: <Skills></Skills>,
+      },
+      {
         path: "/about",
         element: <About></About>,
       },

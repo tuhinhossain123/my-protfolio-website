@@ -16,6 +16,11 @@ const Navbar = () => {
         </Link>
       </li>
       <li className="text-[16px]  font-bold">
+        <Link to="/education" spy={true} smooth={true} offset={50} duration={500}>
+          Education
+        </Link>
+      </li>
+      <li className="text-[16px]  font-bold">
         <NavLink
           to="/projects"
           spy={true}

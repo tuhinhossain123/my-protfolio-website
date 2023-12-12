@@ -13,7 +13,7 @@ const About = () => {
       <p className="text-xl font-sans">
         I am self taught initially,but i want to increase my learning speed.
         Currently my main target is to become full stake developer.I want to
-        make my career better with this.
+        make my career better with this.I'm actively searching for a full-time software developer position to gain practical experience and collaborate with like-minded individuals who share my passion for coding.
       </p>
     </div>
   );

@@ -2,6 +2,7 @@ import banner from "../../../assets/banner.jpg";
 import { FaDownload } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa";
 import resume from"../../../assets/TUFAN PROJECT.pdf"
+import { Link } from "react-scroll";
 
 const Banner = () => {
   return (
@@ -15,9 +16,9 @@ const Banner = () => {
         </h2>
         <h3 className="text-2xl font-medium">|| MERN Stake Developer</h3>
         <div className="flex gap-4">
-          <button className=" font-semibold text-sm md:text-lg  text-white p-3 rounded-lg flex items-center gap-2 bg-sky-500">
+          <Link  to="/contact" spy={true} smooth={true} offset={50} duration={500} className="btn font-semibold text-sm md:text-lg  text-white p-3 rounded-lg flex items-center gap-2 bg-sky-500">
             Contact Me <FaPhone />
-          </button>
+          </Link>
           <a href={resume} download className="border text-sm md:text-lg font-semibold text-white  p-2 rounded-lg flex items-center gap-2">
             Download Resume <FaDownload />
           </a>
