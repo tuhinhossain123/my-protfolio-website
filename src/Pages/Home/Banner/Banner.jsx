@@ -6,8 +6,8 @@ import { Link } from "react-scroll";
 
 const Banner = () => {
   return (
-    <div  className="flex md:justify-around flex-col-reverse md:flex-row items-center my-10 px-8 md:px-4 lg:px-0 ">
-      <div className="space-y-4 my-3">
+    <div  className="flex md:justify-around flex-col-reverse md:flex-row items-center my-10 px-10 md:px-4 lg:px-0 ">
+      <div className="space-y-4 my-3 ">
         <h2>
           <span className="text-4xl font-bold">Hi There 👋,</span>{" "}
           <span className="text-4xl font-bold text-sky-500">
