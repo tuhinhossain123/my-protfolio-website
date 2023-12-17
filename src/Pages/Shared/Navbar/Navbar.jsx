@@ -1,6 +1,5 @@
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
+import tag from "../../../assets/tag.png";
 
 const Navbar = () => {
   const links = (
@@ -16,7 +15,13 @@ const Navbar = () => {
         </Link>
       </li>
       <li className="text-[16px]  font-bold">
-        <Link to="/education" spy={true} smooth={true} offset={50} duration={500}>
+        <Link
+          to="/education"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
           Education
         </Link>
       </li>
@@ -70,8 +75,8 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <button className="text-sm md:text-xl font-mono font-bold  text-gray-400">
-          Tofazzal Hossain
+        <button className="">
+          <img src={tag} alt="" className="w-10 bg-sky-500 p-2 rounded" />
         </button>
       </div>
       <div className="navbar-end hidden lg:flex">
